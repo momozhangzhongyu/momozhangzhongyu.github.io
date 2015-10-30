@@ -36,7 +36,7 @@
 
 
 
-  <meta name="keywords" content="心得体会," />
+  <meta name="keywords" content="心得体会,js," />
 
 
 
@@ -45,27 +45,19 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="最近工作有变动又重新搭建了一遍，感觉有必要把搭建过程记录一下。
-git我的博客托管到了 github上面，首先下载git,(默认已经注册github)
-创建一个新的SSH key1ssh-keygen -t rsa -C &amp;#34;your_email@youremail.com&amp;#34;
-将SSH key输入到GitHub网站中用文本编辑器打开id_rsa.pub，复制里面的内容，即是key;添">
+<meta name="description" content="需求页面判断将要上传的文件的大小方法不是很好找，记录一下。
+代码实现1&amp;#60;html&amp;#62;  &amp;#10;&amp;#60;title&amp;#62;aa&amp;#60;/title&amp;#62;  &amp;#10;&amp;#60;script type=&amp;#34;text/javascript&amp;#34;&amp;#62;      &amp;#10;function getFileSize(obj) &amp;#123;  &amp;#10;    var">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo搭建博客发布全过程">
-<meta property="og:url" content="http://yoursite.com/2015/10/22/hexo搭建全过程/index.html">
+<meta property="og:title" content="js判断上传文件大小">
+<meta property="og:url" content="http://yoursite.com/2015/10/28/js判断上传文件大小/index.html">
 <meta property="og:site_name" content="Tahiti">
-<meta property="og:description" content="最近工作有变动又重新搭建了一遍，感觉有必要把搭建过程记录一下。
-git我的博客托管到了 github上面，首先下载git,(默认已经注册github)
-创建一个新的SSH key1ssh-keygen -t rsa -C &amp;#34;your_email@youremail.com&amp;#34;
-将SSH key输入到GitHub网站中用文本编辑器打开id_rsa.pub，复制里面的内容，即是key;添">
-<meta property="og:image" content="http://i.imgur.com/t1iVLDm.png">
-<meta property="og:image" content="http://i.imgur.com/htmp2hU.png">
-<meta property="og:updated_time" content="2015-10-23T08:28:39.856Z">
+<meta property="og:description" content="需求页面判断将要上传的文件的大小方法不是很好找，记录一下。
+代码实现1&amp;#60;html&amp;#62;  &amp;#10;&amp;#60;title&amp;#62;aa&amp;#60;/title&amp;#62;  &amp;#10;&amp;#60;script type=&amp;#34;text/javascript&amp;#34;&amp;#62;      &amp;#10;function getFileSize(obj) &amp;#123;  &amp;#10;    var">
+<meta property="og:updated_time" content="2015-10-30T02:50:07.590Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo搭建博客发布全过程">
-<meta name="twitter:description" content="最近工作有变动又重新搭建了一遍，感觉有必要把搭建过程记录一下。
-git我的博客托管到了 github上面，首先下载git,(默认已经注册github)
-创建一个新的SSH key1ssh-keygen -t rsa -C &amp;#34;your_email@youremail.com&amp;#34;
-将SSH key输入到GitHub网站中用文本编辑器打开id_rsa.pub，复制里面的内容，即是key;添">
+<meta name="twitter:title" content="js判断上传文件大小">
+<meta name="twitter:description" content="需求页面判断将要上传的文件的大小方法不是很好找，记录一下。
+代码实现1&amp;#60;html&amp;#62;  &amp;#10;&amp;#60;title&amp;#62;aa&amp;#60;/title&amp;#62;  &amp;#10;&amp;#60;script type=&amp;#34;text/javascript&amp;#34;&amp;#62;      &amp;#10;function getFileSize(obj) &amp;#123;  &amp;#10;    var">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -77,7 +69,7 @@ git我的博客托管到了 github上面，首先下载git,(默认已经注册gi
 
 
 
-  <title> hexo搭建博客发布全过程 | Tahiti </title>
+  <title> js判断上传文件大小 | Tahiti </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -202,7 +194,7 @@ git我的博客托管到了 github上面，首先下载git,(默认已经注册gi
             
             
               
-                hexo搭建博客发布全过程
+                js判断上传文件大小
               
             
           </h1>
@@ -211,8 +203,8 @@ git我的博客托管到了 github上面，首先下载git,(默认已经注册gi
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-10-22T16:30:28+08:00" content="2015-10-22">
-              2015-10-22
+            <time itemprop="dateCreated" datetime="2015-10-28T17:57:27+08:00" content="2015-10-28">
+              2015-10-28
             </time>
           </span>
 
@@ -222,8 +214,8 @@ git我的博客托管到了 github上面，首先下载git,(默认已经注册gi
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/10/22/hexo搭建全过程/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/10/22/hexo搭建全过程/" itemprop="commentsCount"></span>
+                <a href="/2015/10/28/js判断上传文件大小/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/10/28/js判断上传文件大小/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -242,33 +234,8 @@ git我的博客托管到了 github上面，首先下载git,(默认已经注册gi
       
 
       
-        <span itemprop="articleBody"><p>最近工作有变动又重新搭建了一遍，感觉有必要把搭建过程记录一下。</p>
-<h2 id="git">git</h2><p>我的博客托管到了 <a href="https://github.com/" target="_blank">github</a>上面，首先下载git,(默认已经注册github)</p>
-<h3 id="创建一个新的SSH_key">创建一个新的SSH key</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &#34;your_email@youremail.com&#34;</span><br></pre></td></tr></table></figure>
-<h3 id="将SSH_key输入到GitHub网站中">将SSH key输入到GitHub网站中</h3><p>用文本编辑器打开id_rsa.pub，复制里面的内容，即是key;添加：<br><img src="http://i.imgur.com/t1iVLDm.png" alt=""><br>随便添加一个title,粘贴到key中保存。</p>
-<h3 id="测试设置是否正确">测试设置是否正确</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<h3 id="设置个人信息">设置个人信息</h3><p>设置用户名和邮箱<br>Git通过检测用户名和邮箱来跟踪进行commit的用户<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &#34;Firstname Lastname&#34;    &#10;git config --global user.email &#34;your_email@youremail.com&#34;</span><br></pre></td></tr></table></figure></p>
-<h2 id="hexo">hexo</h2><p>终于进入正题了。</p>
-<h3 id="node-js">node.js</h3><p>安装hexo的前提就是<a href="https://nodejs.org/en/" target="_blank">node.js</a>;我安装的版本是node-v4.1.0-x64.msi,一路安装完成。<br>验证安装是否成功<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\hc-3020-i3&#62;node -v&#10;v4.1.0&#10;&#10;C:\Users\hc-3020-i3&#62;npm -v&#10;2.14.3</span><br></pre></td></tr></table></figure></p>
-<h3 id="hexo安装">hexo安装</h3><p>安装hexo<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\hc-3020-i3&#62;npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<p>验证hexo是否安装成功<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\hc-3020-i3&#62;hexo version</span><br></pre></td></tr></table></figure></p>
-<h3 id="hexo建站">hexo建站</h3><p>初始化项目</p>
-<p>dos命令新建选择文件夹，作为hexo初始化路径</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\hc-3020-i3&#62;d:&#10;&#10;D:\&#62;hexo init blog&#10;info copying data to D:/blog&#10;hexo&#21338;&#23458;&#25991;&#20214;&#21021;&#22987;&#21270;&#36335;&#24452;&#20026;D:/blog.</span><br></pre></td></tr></table></figure>
-<p>安装依赖,进入目录<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;D:\blog&#62;npm install</span><br></pre></td></tr></table></figure></p>
-<p>启动服务hexo s，浏览器访问<br>输入<a href="http://127.0.0.1:4000" target="_blank" rel="external">http://127.0.0.1:4000</a></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;D:\blog&#62;hexo s&#10;info Hexo is running at http://***. press Ctrl +C to stop</span><br></pre></td></tr></table></figure>
-<h2 id="博客发布">博客发布</h2><h3 id="github创建项目">github创建项目</h3><p>这个就不再讲了，自行百度吧。</p>
-<h3 id="hexo配置">hexo配置</h3><p>编辑全局配置文件：_config.yml，找到deploy的部分，设置github的项目地址。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;deploy:&#10;  type: github&#10;  repo: git@github.com:momozhangzhongyu/momozhangzhongyu.github.io.git</span><br></pre></td></tr></table></figure>
-<p>注意：对比：<a href="https://github.com/momozhangzhongyu/momozhangzhongyu.github.io" target="_blank" rel="external">https://github.com/momozhangzhongyu/momozhangzhongyu.github.io</a><br>和git@github.com:momozhangzhongyu/momozhangzhongyu.github.io.git<br>根据自己创建做出项目路径后加[.git]结尾。</p>
-<h3 id="执行hexo命令">执行hexo命令</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g #&#29983;&#25104;&#38745;&#24577;&#25991;&#20214;&#10;hexo d #&#37096;&#32626;&#21040;github</span><br></pre></td></tr></table></figure>
-<h3 id="关联域名">关联域名</h3><p>登陆访问github。<br>（2）进入github中需要关联域名的相应项目。<br>（3）在该项目下创建CNAME，其CNAME内容即是域名。<br><img src="http://i.imgur.com/htmp2hU.png" alt=""><br>内容: www.mmzzy.com</p>
-<h2 id="例外">例外</h2><h3 id="报错hexo_ERROR_Deployer_not_found:_github">报错hexo ERROR Deployer not found: github</h3><p>执行命令</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>将deploy 的 type由github改为git</p>
-<p>–完</p>
-</span>
+        <span itemprop="articleBody"><h2 id="需求">需求</h2><p>页面判断将要上传的文件的大小<br>方法不是很好找，记录一下。</p>
+<h2 id="代码实现">代码实现</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;html&#62;  &#10;&#60;title&#62;aa&#60;/title&#62;  &#10;&#60;script type=&#34;text/javascript&#34;&#62;      &#10;function getFileSize(obj) &#123;  &#10;    var size = 0;  &#10;    if(navigator.userAgent.indexOf(&#34;MSIE&#34;)&#62;0)&#123;    &#10;        var fso = new ActiveXObject(&#39;Scripting.FileSystemObject&#39;);  &#10;        var file = fso.GetFile(obj.value);  &#10;        size = file.size;   &#10;    &#125;else &#123;  &#10;        size = obj.files[0].size;  &#10;    &#125;  &#10;    alert(size);  &#10;&#125;    &#10;   &#10;&#60;/script&#62;      &#10;&#60;body&#62;      &#10;&#60;INPUT TYPE=&#34;file&#34; NAME=&#34;file&#34; SIZE=&#34;30&#34; onchange=&#34;getFileSize(this)&#34;&#62;        &#10;&#60;/body&#62;  &#10;&#60;/html&#62;</span><br></pre></td></tr></table></figure></span>
       
     </div>
 
@@ -276,7 +243,7 @@ git我的博客托管到了 github上面，首先下载git,(默认已经注册gi
       
         <div class="post-tags">
           
-            <a href="/tags/心得体会/" rel="tag">#心得体会</a>
+            <a href="/tags/心得体会-js/" rel="tag">#心得体会,js</a>
           
         </div>
       
@@ -285,13 +252,13 @@ git我的博客托管到了 github上面，首先下载git,(默认已经注册gi
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2015/10/22/hexo搭建全过程/" rel="next" title="hexo搭建博客发布全过程">
+                <i class="fa fa-chevron-left"></i> hexo搭建博客发布全过程
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/10/28/js判断上传文件大小/" rel="prev" title="js判断上传文件大小">
-                js判断上传文件大小 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -306,10 +273,10 @@ git我的博客托管到了 github上面，首先下载git,(默认已经注册gi
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2015/10/22/hexo搭建全过程/"
-     data-title="hexo搭建博客发布全过程"
+        <div class="ds-share flat" data-thread-key="2015/10/28/js判断上传文件大小/"
+     data-title="js判断上传文件大小"
      data-content=""
-     data-url="http://yoursite.com/2015/10/22/hexo搭建全过程/">
+     data-url="http://yoursite.com/2015/10/28/js判断上传文件大小/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -335,8 +302,8 @@ git我的博客托管到了 github上面，首先下载git,(默认已经注册gi
         
           <div class="comments" id="comments">
             
-              <div class="ds-thread" data-thread-key="2015/10/22/hexo搭建全过程/"
-                   data-title="hexo搭建博客发布全过程" data-url="http://yoursite.com/2015/10/22/hexo搭建全过程/">
+              <div class="ds-thread" data-thread-key="2015/10/28/js判断上传文件大小/"
+                   data-title="js判断上传文件大小" data-url="http://yoursite.com/2015/10/28/js判断上传文件大小/">
               </div>
             
           </div>
@@ -421,7 +388,7 @@ git我的博客托管到了 github上面，首先下载git,(默认已经注册gi
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git"><span class="nav-number">1.</span> <span class="nav-text">git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建一个新的SSH_key"><span class="nav-number">1.1.</span> <span class="nav-text">创建一个新的SSH key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#将SSH_key输入到GitHub网站中"><span class="nav-number">1.2.</span> <span class="nav-text">将SSH key输入到GitHub网站中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试设置是否正确"><span class="nav-number">1.3.</span> <span class="nav-text">测试设置是否正确</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置个人信息"><span class="nav-number">1.4.</span> <span class="nav-text">设置个人信息</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo"><span class="nav-number">2.</span> <span class="nav-text">hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#node-js"><span class="nav-number">2.1.</span> <span class="nav-text">node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo安装"><span class="nav-number">2.2.</span> <span class="nav-text">hexo安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo建站"><span class="nav-number">2.3.</span> <span class="nav-text">hexo建站</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客发布"><span class="nav-number">3.</span> <span class="nav-text">博客发布</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#github创建项目"><span class="nav-number">3.1.</span> <span class="nav-text">github创建项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo配置"><span class="nav-number">3.2.</span> <span class="nav-text">hexo配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#执行hexo命令"><span class="nav-number">3.3.</span> <span class="nav-text">执行hexo命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联域名"><span class="nav-number">3.4.</span> <span class="nav-text">关联域名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例外"><span class="nav-number">4.</span> <span class="nav-text">例外</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#报错hexo_ERROR_Deployer_not_found:_github"><span class="nav-number">4.1.</span> <span class="nav-text">报错hexo ERROR Deployer not found: github</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码实现"><span class="nav-number">2.</span> <span class="nav-text">代码实现</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
