@@ -80,15 +80,16 @@
 
 
 
-<meta name="description" content="不要因为走得太远就忘了当初为什么出发。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tahiti">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="首先，我们明显已经知道。要讲的是Java的IO流。从字面意思，我们知道IO流，I应该是指input输入流,O是output输出流。科普一个小概念，感觉很有意思，就计算机速度来说 CPU &amp;gt; 内存 &amp;gt; 硬盘。 I - 就是从硬盘到内存  O- 就是从内存到硬盘  流(stream)的概念源于UNIX中管道(pipe)的概念。在UNIX中，管道是一条不间断的字节流，用来实现程序或进程间的通">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java的IO详解">
+<meta property="og:url" content="http://yoursite.com/2015/11/04/java的IO详解/index.html">
 <meta property="og:site_name" content="Tahiti">
-<meta property="og:description" content="不要因为走得太远就忘了当初为什么出发。">
+<meta property="og:description" content="首先，我们明显已经知道。要讲的是Java的IO流。从字面意思，我们知道IO流，I应该是指input输入流,O是output输出流。科普一个小概念，感觉很有意思，就计算机速度来说 CPU &amp;gt; 内存 &amp;gt; 硬盘。 I - 就是从硬盘到内存  O- 就是从内存到硬盘  流(stream)的概念源于UNIX中管道(pipe)的概念。在UNIX中，管道是一条不间断的字节流，用来实现程序或进程间的通">
+<meta property="og:updated_time" content="2015-11-04T01:48:57.306Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tahiti">
-<meta name="twitter:description" content="不要因为走得太远就忘了当初为什么出发。">
+<meta name="twitter:title" content="java的IO详解">
+<meta name="twitter:description" content="首先，我们明显已经知道。要讲的是Java的IO流。从字面意思，我们知道IO流，I应该是指input输入流,O是output输出流。科普一个小概念，感觉很有意思，就计算机速度来说 CPU &amp;gt; 内存 &amp;gt; 硬盘。 I - 就是从硬盘到内存  O- 就是从内存到硬盘  流(stream)的概念源于UNIX中管道(pipe)的概念。在UNIX中，管道是一条不间断的字节流，用来实现程序或进程间的通">
 
 
 
@@ -106,7 +107,7 @@
   };
 </script>
 
-  <title> 归档 | Tahiti </title>
+  <title> java的IO详解 | Tahiti </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -137,7 +138,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,140 +216,121 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 3 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2015">2015</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2015/11/04/java的IO详解/" itemprop="url">
-              
-                <span itemprop="name">java的IO详解</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2015-11-04T09:28:26+08:00"
-              content="2015-11-04" >
-          11-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2015/10/28/js判断上传文件大小/" itemprop="url">
-              
-                <span itemprop="name">js判断上传文件大小</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2015-10-28T17:57:27+08:00"
-              content="2015-10-28" >
-          10-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2015/10/22/hexo搭建全过程/" itemprop="url">
-              
-                <span itemprop="name">hexo搭建博客发布全过程</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2015-10-22T16:30:28+08:00"
-              content="2015-10-22" >
-          10-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
+  
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                java的IO详解
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-11-04T09:28:26+08:00" content="2015-11-04">
+              2015-11-04
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/11/04/java的IO详解/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/04/java的IO详解/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>首先，我们明显已经知道。要讲的是Java的IO流。从字面意思，我们知道IO流，I应该是指input输入流,O是output输出流。<br>科普一个小概念，感觉很有意思，就计算机速度来说 CPU &gt; 内存 &gt; 硬盘。<br><strong> I - 就是从硬盘到内存 </strong><br><strong> O- 就是从内存到硬盘 </strong><br> 流(stream)的概念源于UNIX中管道(pipe)的概念。在UNIX中，管道是一条不间断的字节流，用来实现程序或进程间的通信，或读写外围设备、外部文件等。</p>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/10/28/js判断上传文件大小/" rel="next" title="js判断上传文件大小">
+                <i class="fa fa-chevron-left"></i> js判断上传文件大小
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -356,6 +338,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/11/04/java的IO详解/"
+           data-title="java的IO详解" data-url="http://yoursite.com/2015/11/04/java的IO详解/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -375,8 +365,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/default_avatar.jpg"
@@ -419,6 +418,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -522,11 +532,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   
