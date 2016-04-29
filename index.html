@@ -96,7 +96,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post"},
+    sidebar: {"position":"left","display":"always"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -143,7 +143,7 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
+      <div class="header-inner"><div class="site-meta custom-logo">
   
 
   <div class="custom-logo-site-title">
@@ -290,9 +290,14 @@
       
         
           
-            <p>首先，我们明显已经知道。要讲的是Java的IO流。从字面意思，我们知道IO流，I应该是指input输入流,O是output输出流。<br>科普一个小概念，感觉很有意思，就计算机速度来说 CPU &gt; 内存 &gt; 硬盘。<br><strong> I - 就是从硬盘到内存 </strong><br><strong> O- 就是从内存到硬盘 </strong><br> 流(stream)的概念源于UNIX中管道(pipe)的概念。在UNIX中，管道是一条不间断的字节流，用来实现程序或进程间的通信，或读写外围设备、外部文件等。</p>
+          首先，我们明显已经知道。要讲的是Java的IO流。从字面意思，我们知道IO流，I应该是指input输入流,O是output输出流。科普一个小概念，感觉很有意思，就计算机速度来说 CPU &gt; 内存 &gt; 硬盘。 I - 就是从硬盘到内存  O- 就是从内存到硬盘  流(stream)的概念源于UNIX中管道(pipe)的概念。在UNIX中，管道是一条不间断的字节流，用来实现程序或进程间的通
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/11/04/java的IO详解/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -391,9 +396,15 @@
       
         
           
-            <h2 id="需求">需求</h2><p>页面判断将要上传的文件的大小<br>方法不是很好找，记录一下。</p>
-<h2 id="代码实现">代码实现</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;html&#62;  &#10;&#60;title&#62;aa&#60;/title&#62;  &#10;&#60;script type=&#34;text/javascript&#34;&#62;      &#10;function getFileSize(obj) &#123;  &#10;    var size = 0;  &#10;    if(navigator.userAgent.indexOf(&#34;MSIE&#34;)&#62;0)&#123;    &#10;        var fso = new ActiveXObject(&#39;Scripting.FileSystemObject&#39;);  &#10;        var file = fso.GetFile(obj.value);  &#10;        size = file.size;   &#10;    &#125;else &#123;  &#10;        size = obj.files[0].size;  &#10;    &#125;  &#10;    alert(size);  &#10;&#125;    &#10;   &#10;&#60;/script&#62;      &#10;&#60;body&#62;      &#10;&#60;INPUT TYPE=&#34;file&#34; NAME=&#34;file&#34; SIZE=&#34;30&#34; onchange=&#34;getFileSize(this)&#34;&#62;        &#10;&#60;/body&#62;  &#10;&#60;/html&#62;</span><br></pre></td></tr></table></figure>
-          
+          需求页面判断将要上传的文件的大小方法不是很好找，记录一下。
+代码实现1&#60;html&#62;  &#10;&#60;title&#62;aa&#60;/title&#62;  &#10;&#60;script type=&#34;text/javascript&#34;&#62;      &#10;function getFileSize(obj) &#123;  &#10;    var
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/10/28/js判断上传文件大小/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -492,34 +503,17 @@
       
         
           
-            <p>最近工作有变动又重新搭建了一遍，感觉有必要把搭建过程记录一下。</p>
-<h2 id="git">git</h2><p>我的博客托管到了 <a href="https://github.com/" target="_blank">github</a>上面，首先下载git,(默认已经注册github)</p>
-<h3 id="创建一个新的SSH_key">创建一个新的SSH key</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &#34;your_email@youremail.com&#34;</span><br></pre></td></tr></table></figure>
-<h3 id="将SSH_key输入到GitHub网站中">将SSH key输入到GitHub网站中</h3><p>用文本编辑器打开id_rsa.pub，复制里面的内容，即是key;添加：<br><img src="http://i.imgur.com/t1iVLDm.png" alt=""><br>随便添加一个title,粘贴到key中保存。</p>
-<h3 id="测试设置是否正确">测试设置是否正确</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<h3 id="设置个人信息">设置个人信息</h3><p>设置用户名和邮箱<br>Git通过检测用户名和邮箱来跟踪进行commit的用户<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &#34;Firstname Lastname&#34;    &#10;git config --global user.email &#34;your_email@youremail.com&#34;</span><br></pre></td></tr></table></figure></p>
-<h2 id="hexo">hexo</h2><p>终于进入正题了。</p>
-<h3 id="node-js">node.js</h3><p>安装hexo的前提就是<a href="https://nodejs.org/en/" target="_blank">node.js</a>;我安装的版本是node-v4.1.0-x64.msi,一路安装完成。<br>验证安装是否成功<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\hc-3020-i3&#62;node -v&#10;v4.1.0&#10;&#10;C:\Users\hc-3020-i3&#62;npm -v&#10;2.14.3</span><br></pre></td></tr></table></figure></p>
-<h3 id="hexo安装">hexo安装</h3><p>安装hexo<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\hc-3020-i3&#62;npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<p>验证hexo是否安装成功<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\hc-3020-i3&#62;hexo version</span><br></pre></td></tr></table></figure></p>
-<h3 id="hexo建站">hexo建站</h3><p>初始化项目</p>
-<p>dos命令新建选择文件夹，作为hexo初始化路径</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\hc-3020-i3&#62;d:&#10;&#10;D:\&#62;hexo init blog&#10;info copying data to D:/blog&#10;hexo&#21338;&#23458;&#25991;&#20214;&#21021;&#22987;&#21270;&#36335;&#24452;&#20026;D:/blog.</span><br></pre></td></tr></table></figure>
-<p>安装依赖,进入目录<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;D:\blog&#62;npm install</span><br></pre></td></tr></table></figure></p>
-<p>启动服务hexo s，浏览器访问<br>输入<a href="http://127.0.0.1:4000" target="_blank" rel="external">http://127.0.0.1:4000</a></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;D:\blog&#62;hexo s&#10;info Hexo is running at http://***. press Ctrl +C to stop</span><br></pre></td></tr></table></figure>
-<h2 id="博客发布">博客发布</h2><h3 id="github创建项目">github创建项目</h3><p>这个就不再讲了，自行百度吧。</p>
-<h3 id="hexo配置">hexo配置</h3><p>编辑全局配置文件：_config.yml，找到deploy的部分，设置github的项目地址。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;deploy:&#10;  type: github&#10;  repo: git@github.com:momozhangzhongyu/momozhangzhongyu.github.io.git</span><br></pre></td></tr></table></figure>
-<p>注意：对比：<a href="https://github.com/momozhangzhongyu/momozhangzhongyu.github.io" target="_blank" rel="external">https://github.com/momozhangzhongyu/momozhangzhongyu.github.io</a><br>和git@github.com:momozhangzhongyu/momozhangzhongyu.github.io.git<br>根据自己创建做出项目路径后加[.git]结尾。</p>
-<h3 id="执行hexo命令">执行hexo命令</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g #&#29983;&#25104;&#38745;&#24577;&#25991;&#20214;&#10;hexo d #&#37096;&#32626;&#21040;github</span><br></pre></td></tr></table></figure>
-<h3 id="关联域名">关联域名</h3><p>登陆访问github。<br>（2）进入github中需要关联域名的相应项目。<br>（3）在该项目下创建CNAME，其CNAME内容即是域名。<br><img src="http://i.imgur.com/htmp2hU.png" alt=""><br>内容: www.mmzzy.com</p>
-<h2 id="例外">例外</h2><h3 id="报错hexo_ERROR_Deployer_not_found:_github">报错hexo ERROR Deployer not found: github</h3><p>执行命令</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>将deploy 的 type由github改为git</p>
-<p>–完</p>
+          最近工作有变动又重新搭建了一遍，感觉有必要把搭建过程记录一下。
+git我的博客托管到了 github上面，首先下载git,(默认已经注册github)
+创建一个新的SSH key1ssh-keygen -t rsa -C &#34;your_email@youremail.com&#34;
+将SSH key输入到GitHub网站中用文本编辑器打开id_rsa.pub，复制里面的内容，即是key;添
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/10/22/hexo搭建全过程/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
