@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="linux命令," />
 
 
 
@@ -80,16 +80,28 @@
 
 
 
-<meta name="description" content="首先，我们明显已经知道。要讲的是Java的IO流。从字面意思，我们知道IO流，I应该是指input输入流,O是output输出流。科普一个小概念，感觉很有意思，就计算机速度来说 CPU &amp;gt; 内存 &amp;gt; 硬盘。 I - 就是从硬盘到内存  O- 就是从内存到硬盘  流(stream)的概念源于UNIX中管道(pipe)的概念。在UNIX中，管道是一条不间断的字节流，用来实现程序或进程间的通">
+<meta name="description" content="#linux命令java开发需掌握#
+作为一个Java开发人员，有些常用的Linux命令必须掌握。
+1.查找文件find / -name filename.txt 根据名称查找/目录下的filename.txt文件。
+find . -name “*.xml” 递归查找所有的xml文件
+find . -name “*.xml” |xargs grep “hello world” 递归查找所有文件内容">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java的IO详解">
-<meta property="og:url" content="http://yoursite.com/2015/11/04/java的IO详解/index.html">
+<meta property="og:title" content="Tahiti">
+<meta property="og:url" content="http://yoursite.com/2016/05/11/linux命令java开发需掌握/index.html">
 <meta property="og:site_name" content="Tahiti">
-<meta property="og:description" content="首先，我们明显已经知道。要讲的是Java的IO流。从字面意思，我们知道IO流，I应该是指input输入流,O是output输出流。科普一个小概念，感觉很有意思，就计算机速度来说 CPU &amp;gt; 内存 &amp;gt; 硬盘。 I - 就是从硬盘到内存  O- 就是从内存到硬盘  流(stream)的概念源于UNIX中管道(pipe)的概念。在UNIX中，管道是一条不间断的字节流，用来实现程序或进程间的通">
-<meta property="og:updated_time" content="2015-11-04T01:48:57.306Z">
+<meta property="og:description" content="#linux命令java开发需掌握#
+作为一个Java开发人员，有些常用的Linux命令必须掌握。
+1.查找文件find / -name filename.txt 根据名称查找/目录下的filename.txt文件。
+find . -name “*.xml” 递归查找所有的xml文件
+find . -name “*.xml” |xargs grep “hello world” 递归查找所有文件内容">
+<meta property="og:updated_time" content="2016-05-11T03:55:34.427Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java的IO详解">
-<meta name="twitter:description" content="首先，我们明显已经知道。要讲的是Java的IO流。从字面意思，我们知道IO流，I应该是指input输入流,O是output输出流。科普一个小概念，感觉很有意思，就计算机速度来说 CPU &amp;gt; 内存 &amp;gt; 硬盘。 I - 就是从硬盘到内存  O- 就是从内存到硬盘  流(stream)的概念源于UNIX中管道(pipe)的概念。在UNIX中，管道是一条不间断的字节流，用来实现程序或进程间的通">
+<meta name="twitter:title" content="Tahiti">
+<meta name="twitter:description" content="#linux命令java开发需掌握#
+作为一个Java开发人员，有些常用的Linux命令必须掌握。
+1.查找文件find / -name filename.txt 根据名称查找/目录下的filename.txt文件。
+find . -name “*.xml” 递归查找所有的xml文件
+find . -name “*.xml” |xargs grep “hello world” 递归查找所有文件内容">
 
 
 
@@ -107,7 +119,7 @@
   };
 </script>
 
-  <title> java的IO详解 | Tahiti </title>
+  <title>  | Tahiti </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -237,7 +249,7 @@
             
             
               
-                java的IO详解
+                
               
             
           </h1>
@@ -249,8 +261,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-11-04T09:28:26+08:00" content="2015-11-04">
-              2015-11-04
+            <time itemprop="dateCreated" datetime="2016-05-11T11:42:00+08:00" content="2016-05-11">
+              2016-05-11
             </time>
           </span>
 
@@ -260,8 +272,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/11/04/java的IO详解/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/04/java的IO详解/" itemprop="commentsCount"></span>
+                <a href="/2016/05/11/linux命令java开发需掌握/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/11/linux命令java开发需掌握/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -284,7 +296,76 @@
       
 
       
-        <p>首先，我们明显已经知道。要讲的是Java的IO流。从字面意思，我们知道IO流，I应该是指input输入流,O是output输出流。<br>科普一个小概念，感觉很有意思，就计算机速度来说 CPU &gt; 内存 &gt; 硬盘。<br><strong> I - 就是从硬盘到内存 </strong><br><strong> O- 就是从内存到硬盘 </strong><br> 流(stream)的概念源于UNIX中管道(pipe)的概念。在UNIX中，管道是一条不间断的字节流，用来实现程序或进程间的通信，或读写外围设备、外部文件等。</p>
+        <p>#linux命令java开发需掌握#</p>
+<p><em>作为一个Java开发人员，有些常用的Linux命令必须掌握。</em></p>
+<h2 id="1-查找文件">1.查找文件</h2><p><strong>find / -name filename.txt</strong> 根据名称查找/目录下的filename.txt文件。</p>
+<p><strong>find . -name “*.xml” </strong>递归查找所有的xml文件</p>
+<p><strong>find . -name “*.xml”</strong> |xargs grep “hello world” 递归查找所有文件内容中包含hello world的xml文件</p>
+<p><strong>grep -H ‘spring’ *.xml</strong> 查找所以有的包含spring的xml文件</p>
+<p><strong>find ./ -size 0 | xargs rm -f &amp;</strong> 删除文件大小为零的文件</p>
+<p><strong>ls -l | grep ‘.jar’</strong> 查找当前目录中的所有jar文件</p>
+<p><strong>grep ‘test’ d*</strong> 显示所有以d开头的文件中包含test的行。</p>
+<p><strong>grep ‘test’ aa bb cc</strong> 显示在aa，bb，cc文件中匹配test的行。</p>
+<p><strong>grep ‘[a-z]{5}‘ aa</strong> 显示所有包含每个字符串至少有5个连续小写字符的字符串的行。</p>
+<h2 id="2-查看一个程序是否运行">2.查看一个程序是否运行</h2><p><strong>ps –ef|grep tomcat</strong> 查看所有有关tomcat的进程</p>
+<p><strong>ps -ef|grep –color java</strong> 高亮要查询的关键字</p>
+<h2 id="3-终止线程">3.终止线程</h2><p><strong>kill -9 19979</strong> 终止线程号位19979的进程</p>
+<h2 id="4-查看文件，包含隐藏文件">4.查看文件，包含隐藏文件</h2><p><strong>ls -al</strong></p>
+<p>##5.当前工作目录##</p>
+<p><strong>pwd</strong></p>
+<p>##6.复制文件##</p>
+<p><strong>cp source dest</strong> 复制文件</p>
+<p><strong>cp -r sourceFolder targetFolder</strong> 递归复制整个文件夹</p>
+<p><strong>scp sourecFile romoteUserName@remoteIp:remoteAddr</strong> 远程拷贝</p>
+<p>##7.创建目录##</p>
+<p><strong>mkdir newfolder</strong></p>
+<p>##8.删除目录##</p>
+<p><strong>rmdir deleteEmptyFolder</strong>  删除空目录<br><strong>rm -rf deleteFile</strong>  递归删除目录中所有内容</p>
+<p>##9.移动文件##</p>
+<p><strong>mv /temp/movefile /targetFolder</strong></p>
+<p>##10.重命令##</p>
+<p><strong>mv oldNameFile newNameFile</strong></p>
+<p>##11.切换用户##</p>
+<p><strong>su -username</strong></p>
+<p>##12.修改文件权限##</p>
+<p>chmod 777 file.java //file.java的权限-rwxrwxrwx，r表示读、w表示写、x表示可执行</p>
+<p>##13.压缩文件##</p>
+<p><strong>tar -czf test.tar.gz /test1 /test2</strong></p>
+<p>##14.列出压缩文件列表##</p>
+<p><strong>tar -tzf test.tar.gz</strong></p>
+<p>##15.解压文件##</p>
+<p><strong>tar -xvzf test.tar.gz</strong></p>
+<p>##16.查看文件头10行##</p>
+<p><strong>head -n 10 example.txt</strong></p>
+<p>##17.查看文件尾10行##</p>
+<p><strong>tail -n 10 example.txt</strong></p>
+<p>##18.查看日志类型文件##</p>
+<p><strong>tail -f exmaple.log </strong>//这个命令会自动显示新增内容，屏幕只显示10行内容的（可设置）。</p>
+<p>##19.使用超级管理员身份执行命令##</p>
+<p><strong>sudo rm a.txt</strong> 使用管理员身份删除文件</p>
+<p>##20.查看端口占用情况##</p>
+<p><strong>netstat -tln | grep 8080</strong> 查看端口8080的使用情况</p>
+<p>##21.查看端口属于哪个程序##</p>
+<p><strong>lsof -i :8080</strong></p>
+<p>##22.查看进程##</p>
+<p><strong>ps aux|grep java</strong> 查看java进程</p>
+<p><strong>ps aux</strong> 查看所有进程</p>
+<p>##23.以树状图列出目录的内容##</p>
+<p><strong>tree a</strong></p>
+<p><strong>ps:Mac</strong>下使用tree命令</p>
+<p>##24. 文件下载##</p>
+<p><strong>wget <a href="http://file.tgz" target="_blank" rel="external">http://file.tgz</a></strong> mac下安装wget命令</p>
+<p><strong>curl <a href="http://file.tgz" target="_blank" rel="external">http://file.tgz</a></strong></p>
+<p>##25. 网络检测##</p>
+<p><strong>ping www.just-ping.com</strong></p>
+<p>##26.远程登录##</p>
+<p><strong>ssh userName@ip</strong></p>
+<p>##27.打印信息##</p>
+<p><strong>echo $JAVA_HOME</strong> 打印java home环境变量的值</p>
+<p>##28.java 常用命令##</p>
+<p><strong>java javac jps ,jstat ,jmap, jstack</strong></p>
+<p>##29.其他命令##</p>
+<p><strong>svn git maven</strong></p>
 
       
     </div>
@@ -303,22 +384,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/linux命令/" rel="tag">#linux命令</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/10/28/js判断上传文件大小/" rel="next" title="js判断上传文件大小">
-                <i class="fa fa-chevron-left"></i> js判断上传文件大小
+              <a href="/2015/11/04/java的IO详解/" rel="next" title="java的IO详解">
+                <i class="fa fa-chevron-left"></i> java的IO详解
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/11/linux命令java开发需掌握/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -344,8 +427,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/11/04/java的IO详解/"
-           data-title="java的IO详解" data-url="http://yoursite.com/2015/11/04/java的IO详解/">
+      <div class="ds-thread" data-thread-key="2016/05/11/linux命令java开发需掌握/"
+           data-title="" data-url="http://yoursite.com/2016/05/11/linux命令java开发需掌握/">
       </div>
     
   </div>
@@ -429,7 +512,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-查找文件"><span class="nav-number">1.</span> <span class="nav-text">1.查找文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-查看一个程序是否运行"><span class="nav-number">2.</span> <span class="nav-text">2.查看一个程序是否运行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-终止线程"><span class="nav-number">3.</span> <span class="nav-text">3.终止线程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-查看文件，包含隐藏文件"><span class="nav-number">4.</span> <span class="nav-text">4.查看文件，包含隐藏文件</span></a></li></ol></div>
             
           </div>
         </section>
